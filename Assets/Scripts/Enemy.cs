@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     Rigidbody2D rgbd2d;
 
+    [SerializeField] int HP = 10;
+
     private void Awake()
     {
         rgbd2d= GetComponent<Rigidbody2D>();
@@ -34,16 +36,13 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("I'm dying, help!");
     }
-
-    // Start is called before the first frame update
-    void Start()
+    public void TakeDmg(int damage)
     {
-        
+        HP -= damage;
+        if(HP < 1)
+        {
+            Destroy(gameObject);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
