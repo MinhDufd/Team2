@@ -3,20 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour,IDamageable
 {
-    [SerializeField] Transform targetDesination;
+    Transform targetDesination;
     GameObject targetGameobject;
+    Character targetCharacter;
     [SerializeField] float speed;
 
     Rigidbody2D rgbd2d;
 
     [SerializeField] int HP = 10;
+    [SerializeField] int damage=5;
 
     private void Awake()
     {
         rgbd2d= GetComponent<Rigidbody2D>();
-        targetGameobject = targetDesination.gameObject;
+        
+    }
+
+    public void SetTarget(GameObject target)
+    {
+        targetGameobject = target;
+        targetDesination = target.transform;
     }
 
     private void FixedUpdate()
@@ -34,7 +42,10 @@ public class Enemy : MonoBehaviour
 
     private void Attack()
     {
-        Debug.Log("I'm dying, help!");
+        if (targetCharacter == null) 
+        {targetCharacter = targetGameobject.GetComponent<Character>(); 
+        }
+        targetCharacter.TakeDamage(damage);
     }
     public void TakeDmg(int damage)
     {

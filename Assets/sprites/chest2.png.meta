@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2057d1f1d015ae041ba20ee84ada642d
+guid: c70b1c773d382334d8705400693112cd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: objects_0
+      name: chest2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 258
-        width: 11
-        height: 11
+        x: 1
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d70cfb03b0ce4c24d81d18edfee2a6f8
-      internalID: 1525080468
+      spriteID: a613e3a2cd2e10943bc230f9ddc0aeba
+      internalID: 527450444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_1
+      name: chest2_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 258
-        width: 11
-        height: 11
+        x: 33
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,50 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc9f17d42956854ca17544845efc3c6
-      internalID: -1967230207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objects_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 258
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7339ab21a490f79428ac98f6a96b8de6
-      internalID: -1468823079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: objects_3
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 258
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88961403a7cd5a547bb992bfa2283316
-      internalID: 1509149331
+      spriteID: b60642a139f273245b443d2f3df6be0d
+      internalID: 98443254
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      objects_0: 1525080468
-      objects_1: -1967230207
-      objects_2: -1468823079
-      objects_3: 1509149331
+      chest2_0: 527450444
+      chest2_1: 98443254
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
