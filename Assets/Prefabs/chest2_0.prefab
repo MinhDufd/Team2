@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1167678007225764801}
   - component: {fileID: 1167678007225764812}
   - component: {fileID: 8689378737944195818}
+  - component: {fileID: -6610033590398908075}
   m_Layer: 0
   m_Name: chest2_0
   m_TagString: Untagged
@@ -138,4 +139,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropItemPrefabs: {fileID: 6157916482828673877, guid: ac3b62c3b54790d449521e93f92df347, type: 3}
-  chance: 0.2
+  chance: 0.8
+--- !u!114 &-6610033590398908075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167678007225764800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c859e0016b2fe8a45a6f8109e3b4ef4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

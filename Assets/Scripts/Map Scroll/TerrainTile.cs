@@ -5,6 +5,7 @@ using UnityEngine;
 public class TerrainTile : MonoBehaviour
 {
     [SerializeField] Vector2Int tilePos;
+    [SerializeField] List<SpawnableObject> spawnObjects;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +13,12 @@ public class TerrainTile : MonoBehaviour
 
         transform.position = new Vector3(-100, -100, 0);
     }
-
+    public void Spawn()
+    {
+        for (int i = 0; i < spawnObjects.Count; i++)
+        {
+            spawnObjects[i].Spawn();
+        }
+    }
     
 }
